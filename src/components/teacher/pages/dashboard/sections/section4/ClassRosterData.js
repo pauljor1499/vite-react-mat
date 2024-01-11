@@ -1,19 +1,17 @@
-import { MenuItem } from "@mui/material";
-
 export const columns = [
     { accessorKey: "fullName", header: "Name" },
     { accessorKey: "className", header: "Class name" },
     { accessorKey: "email", header: "Email" },
 ];
 
-export const rowActionsPending = ({ row }) => [
-    <MenuItem key="acceptClassRoster" onClick={() => console.info("Accept " + row.original.title)}>
-        Accept
-    </MenuItem>,
-    <MenuItem key="rejectClassRoster" onClick={() => console.info("Reject " + row.original.title)}>
-        Reject
-    </MenuItem>,
-];
+// export const rowActionsPending = ({ row }) => [
+//     <MenuItem key="acceptClassRoster" onClick={() => console.info("Accept " + row.original.title)}>
+//         Accept
+//     </MenuItem>,
+//     <MenuItem key="rejectClassRoster" onClick={() => console.info("Reject " + row.original.title)}>
+//         Reject
+//     </MenuItem>,
+// ];
 
 export const rowsPending = [
     {

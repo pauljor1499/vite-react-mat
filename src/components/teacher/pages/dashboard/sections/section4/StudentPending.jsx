@@ -1,9 +1,17 @@
-/* eslint-disable react/jsx-pascal-case */
-import React from "react";
 import PinnedTable from "../../../../../commons/components/tables/pinned_table/PinnedTable";
 import { Box, Typography } from "@mui/material";
 import { MRT_GlobalFilterTextField } from "material-react-table";
-import { columns, rowsPending, rowActionsPending } from "./ClassRosterData";
+import { columns, rowsPending } from "./ClassRosterData";
+import { MenuItem } from "@mui/material";
+
+const rowActionsPending = ({ row }) => [
+    <MenuItem key="acceptClassRoster" onClick={() => console.info("Accept " + row.original.title)}>
+        Accept
+    </MenuItem>,
+    <MenuItem key="rejectClassRoster" onClick={() => console.info("Reject " + row.original.title)}>
+        Reject
+    </MenuItem>,
+];
 
 const PendingStudents = () => {
     const topToolbar = ({ table }) => {

@@ -1,5 +1,3 @@
-@import "../../../../theme/presets/colors";
-
 .navbar-content {
     width: 100%;
     padding: 0 5%;
@@ -22,26 +20,19 @@
     }
 
     a.active {
-        background-color: $blue-1;
-        border-bottom: 2px solid $blue-2;
+        background-color: #ecf8ff;
+        border-bottom: 2px solid #0091de;
     }
 
     a:hover {
-        background-color: $blue-1;
-        border-bottom: 2px solid $blue-2;
+        background-color: #ecf8ff;
+        border-bottom: 2px solid #0091de;
     }
-
-    /* .content-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
     .item-logo {
         flex: 0.5;
         padding: 10px;
-        color: $blue-2;
+        color: #0091de;
     }
 
     .item-links {

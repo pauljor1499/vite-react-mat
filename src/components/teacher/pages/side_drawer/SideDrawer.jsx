@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+/* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import { useState } from "react";
 import "./SideDrawer.scss";
 
@@ -192,7 +193,7 @@ export default function SideDrawer({ teacherComponents }) {
                                         color="primary"
                                         size="small"
                                         fullWidth
-                                        onClick={(e) => {
+                                        onClick={() => {
                                             navigate("/teacher/settings");
                                         }}
                                     >

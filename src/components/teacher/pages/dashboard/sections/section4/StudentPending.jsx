@@ -2,7 +2,7 @@ import { MenuItem } from "@mui/material";
 import PinnedTable from "../../../../../commons/components/tables/pinned_table/PinnedTable";
 import { Box, Typography } from "@mui/material";
 import { MRT_GlobalFilterTextField } from "material-react-table";
-import { columns, rowsPending } from "./ClassRosterData";
+import { columns, rowsPending } from "./ClassRosterData.js";
 
 const rowActionsPending = ({ row }) => [
     <MenuItem key="acceptClassRoster" onClick={() => console.info("Accept " + row.original.title)}>

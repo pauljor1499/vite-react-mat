@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable eqeqeq */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Login.scss";
 
 //store
@@ -180,7 +179,7 @@ const Login = () => {
                                 Forgot Password?
                             </Link>
                             <Link component={ReactRouterLink} to="/register" variant="body2">
-                                Don't have an account? Register
+                                Don`t have an account? Register
                             </Link>
                         </div>
                     </CardContent>

@@ -1,0 +1,31 @@
+.fifth-section-content {
+    width: 100%;
+    background-image: url("https://img.freepik.com/premium-vector/back-school-supplies-background_75047-52.jpg");
+    background-color: #003f92;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+
+    .content-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+
+        h1 {
+            width: 50%;
+            text-align: center;
+            white-space: normal;
+            color: #ffffff;
+            font-size: 2em;
+            line-height: normal;
+        }
+    }
+
+    button {
+        width: 200px;
+    }
+}

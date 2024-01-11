@@ -1,0 +1,18 @@
+.forgot-password-step4-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+    .content-card {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        p {
+            opacity: 75%;
+            line-height: 1.5;
+        }
+    }
+}

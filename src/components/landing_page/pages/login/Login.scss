@@ -1,0 +1,27 @@
+.login-page-content {
+    width: 100%;
+    padding: 5%;
+    background-color: #0091de;
+    text-decoration: dashed;
+
+    .content-card {
+        max-width: 450px;
+        padding: 20px 0;
+        margin: auto;
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .card-title {
+                text-align: center;
+            }
+
+            .additional-actions {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

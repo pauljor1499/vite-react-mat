@@ -1,0 +1,11 @@
+.data-table-content {
+    .MuiDataGrid-root {
+        .MuiDataGrid-cell {
+            outline: none !important;
+        }
+
+        .MuiDataGrid-columnHeader {
+            outline: none !important;
+        }
+    }
+}

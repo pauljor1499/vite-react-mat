@@ -1,0 +1,25 @@
+.section4-content {
+    width: 100%;
+    background-color: #ecf8ff;
+    padding: 50px 0px;
+
+    .content-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+
+        h2 {
+            width: 35%;
+            text-align: center;
+            white-space: normal;
+            line-height: normal;
+        }
+    }
+
+    button {
+        width: 200px;
+    }
+}

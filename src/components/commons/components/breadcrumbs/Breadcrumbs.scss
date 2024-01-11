@@ -1,0 +1,11 @@
+@import "../../../../theme/presets/colors";
+
+.breadcrumb-content {
+    margin: 1% 0;
+    padding-left: 2%;
+    text-decoration: none;
+
+    a {
+        color: $blue-2;
+    }
+}

@@ -1,0 +1,120 @@
+.second-section-content {
+    padding: 5%;
+    text-decoration: none;
+    list-style: none;
+    text-transform: initial;
+    background-color: #ffff;
+
+    .content-header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: auto;
+
+        .content-title h1 {
+            width: 100%;
+            color: #0091de;
+            margin: auto;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .content-description {
+            width: 100%;
+            text-align: center;
+            opacity: 50%;
+            font-size: 1.2em;
+
+            p {
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+
+    .grid-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        margin-top: 10%;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .section1 {
+            height: 100%;
+            display: inline-block;
+            padding: 0px 50px 50px 50px;
+            border-radius: 3%;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            border: 3px solid #8cd6ff;
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #0073b0;
+                border: 6px solid #8cd6ff;
+                margin: auto;
+                margin-top: -50px;
+                margin-bottom: 25px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            h2 {
+                text-align: center;
+                color: #0073b0;
+            }
+
+            span {
+                color: black;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+
+        .section2 {
+            @extend .section1;
+            border: 3px solid #ffcdcd;
+
+            .circle {
+                background: #ff244c;
+                border: 6px solid #ffcdcd;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            h2 {
+                color: #ff244c;
+            }
+        }
+
+        .section3 {
+            @extend .section1;
+            border: 3px solid #a6f48a;
+
+            .circle {
+                background: #05893a;
+                border: 6px solid #a6f48a;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            h2 {
+                color: #05893a;
+            }
+        }
+    }
+}

@@ -15,12 +15,12 @@ import TeacherMainPage from "../components/teacher/Main.jsx";
 import TeacherDashboard from "../components/teacher/pages/dashboard/Dashboard.jsx";
 //teacher classes page
 import TeacherClassesMainPage from "../components/teacher/pages/classes/Main.jsx";
-// import TeacherClassesPage from "../components/teacher/pages/classes/class_list/ClassesPage.jsx";
-// import TeacherViewClassMainPage from "../components/teacher/pages/classes/view_class/Main.jsx";
-// //teacher assignments
+import TeacherClassesPage from "../components/teacher/pages/classes/class_list/ClassesPage.jsx";
+import TeacherViewClassMainPage from "../components/teacher/pages/classes/view_class/Main.jsx";
+//teacher assignments
 // import TeacherNewAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/new_assignment/NewAssignment.jsx";
 // import TeacherEditAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/edit_assignment/EditAssignment.jsx";
-//teacher messages
+// teacher messages
 import TeacherMessages from "../components/teacher/pages/messages/Messages.jsx";
 import TeacherResourcesPage from "../components/teacher/pages/resources/Resources.jsx";
 import TeacherSettingsPage from "../components/teacher/pages/settings/Settings.jsx";
@@ -78,6 +78,24 @@ const routes = createBrowserRouter([
             {
                 path: "classes",
                 element: <TeacherClassesMainPage />,
+                children: [
+                    {
+                        path: "",
+                        element: <TeacherClassesPage />,
+                    },
+                    {
+                        path: ":classTitle",
+                        element: <TeacherViewClassMainPage />,
+                    },
+                    // {
+                    //     path: ":classTitle/:newAssignmentName",
+                    //     element: <TeacherNewAssignment />,
+                    // },
+                    // {
+                    //     path: ":classTitle/edit-assignment",
+                    //     element: <TeacherEditAssignment />,
+                    // },
+                ],
             },
             {
                 path: "messages",

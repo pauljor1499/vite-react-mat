@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     TextField,
     Button,
@@ -38,7 +38,7 @@ const ToDo = () => {
             <TextField
                 fullWidth
                 size="small"
-                label="Add Task"
+                label="Enter text"
                 variant="outlined"
                 value={taskInput}
                 onChange={(e) => setTaskInput(e.target.value)}
@@ -77,7 +77,7 @@ const ToDo = () => {
                     ))
                 ) : (
                     <Typography color="text.secondary">
-                        <i>Task list is empty</i>
+                        <i>ToDo list is empty</i>
                     </Typography>
                 )}
             </List>

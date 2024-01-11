@@ -1,12 +1,23 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import BreadcrumbsComponent from "../../../commons/components/breadcrumbs/Breadcrumbs";
 
-const Main = () => {
+const Classes = () => {
     return (
         <React.Fragment>
-            <Outlet />
+            <Box>
+                <AppBar position="relative" color="primary">
+                    <Toolbar>
+                        <Typography variant="h6">Classes</Typography>
+                    </Toolbar>
+                </AppBar>
+                <BreadcrumbsComponent />
+            </Box>
         </React.Fragment>
     );
 };
 
-export default Main;
+export default Classes;

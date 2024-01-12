@@ -3,7 +3,7 @@ import { Paper } from "@mui/material";
 
 const Section2 = () => {
     const data = [
-        { day: "ALgebra", value: 10 },
+        { day: "Algebra", value: 10 },
         { day: "Calculus", value: 20 },
         { day: "Polynomials", value: 15 },
         { day: "Trigonometry", value: 25 },

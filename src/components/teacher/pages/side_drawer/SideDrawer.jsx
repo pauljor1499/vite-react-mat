@@ -27,6 +27,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import { Button, Typography } from "@mui/material";
 import Tooltip from "@mui/material/Tooltip";
+import { useTheme } from "@mui/material/styles";
 
 //teacher auth
 import { _userLogout } from "../../../../store/slices/auth/UserAuth";
@@ -112,6 +113,7 @@ export default function SideDrawer({ teacherComponents }) {
     //user auth
     const { userData } = useSelector((state) => state.UserAuth);
 
+    const theme = useTheme();
     const navigate = useNavigate();
     const location = useLocation();
     const dispatch = useDispatch();
@@ -249,7 +251,8 @@ export default function SideDrawer({ teacherComponents }) {
                                                 minWidth: 0,
                                                 mr: openDrawer ? 3 : "auto",
                                                 justifyContent: "center",
-                                                color: item.path === location.pathname ? "#0091de" : "",
+                                                color:
+                                                    item.path === location.pathname ? theme.palette.primary.main : "",
                                             }}
                                         >
                                             {item.icon}
@@ -257,7 +260,8 @@ export default function SideDrawer({ teacherComponents }) {
                                         <ListItemText
                                             sx={{
                                                 opacity: openDrawer ? 1 : 0,
-                                                color: item.path === location.pathname ? "#0091de" : "",
+                                                color:
+                                                    item.path === location.pathname ? theme.palette.primary.main : "",
                                             }}
                                         >
                                             {item.text}

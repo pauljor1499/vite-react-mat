@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import ReactApexChart from "react-apexcharts";
 
 const PassingGrade = ({ passingRate, failingRate }) => {

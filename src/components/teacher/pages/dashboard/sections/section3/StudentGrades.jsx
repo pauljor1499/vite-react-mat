@@ -1,4 +1,3 @@
-import React from "react";
 import { List, ListItem, ListItemText, LinearProgress, Typography, Box } from "@mui/material";
 
 const StudentGrades = () => {

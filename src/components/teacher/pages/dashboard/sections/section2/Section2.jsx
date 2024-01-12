@@ -1,4 +1,3 @@
-import React from "react";
 import AssignmentGraph from "./AssignmentGraph";
 import { Paper } from "@mui/material";
 
@@ -12,8 +11,15 @@ const Section2 = () => {
     ];
 
     return (
-        <Paper elevation={2} sx={{ padding: "2%", backgroundColor: "#ffff" }}>
-            <div style={{ width: "100%", margin: "auto" }}>
+        <Paper
+            elevation={2}
+            sx={{
+                width: "100%",
+                padding: "2%",
+                backgroundColor: "#ffff",
+            }}
+        >
+            <div style={{ width: "80%", margin: "auto" }}>
                 <AssignmentGraph
                     data={data}
                     xKey="day"

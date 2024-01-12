@@ -1,5 +1,5 @@
 import { Box, Paper, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Section1.scss";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";

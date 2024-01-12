@@ -7,14 +7,13 @@ import CheckIcon from "@mui/icons-material/Check";
 
 import Fade from '@mui/material/Fade';
 
-import colors from "./../../../../theme/presets/_colors.scss"
-import red from "./../../../../theme/presets/_red.scss";
-import purple from "./../../../../theme/presets/_purple.scss";
-import green from "./../../../../theme/presets/_green.scss";
+import defaultPalette from "./../../../../theme/presets/_default.js"
+import redPalette from "./../../../../theme/presets/_red.js";
+import purplePalette from "./../../../../theme/presets/_purple.js";
+import greenPalette from "./../../../../theme/presets/_green.js";
 
 const PresetSelection = () => {
   const themeContext = useContext(ColorModeContext);
-  console.log(themeContext)
 
   return (
     <Stack
@@ -32,12 +31,12 @@ const PresetSelection = () => {
       >
         <IconButton
           sx={{
-            backgroundColor: colors.primaryMain,
+            backgroundColor: defaultPalette().primaryMain,
             color: "#fff",
             borderRadius: "50%",
             padding: "10px",
             "&.MuiButtonBase-root:hover": {
-              backgroundColor: colors.primary800,
+              backgroundColor: defaultPalette().primary800,
             },
           }}
           onClick={() => { themeContext.presetMode.togglePresetColor("default") }}
@@ -49,12 +48,12 @@ const PresetSelection = () => {
         </IconButton>
         <IconButton
           sx={{
-            backgroundColor: red.primaryMain,
+            backgroundColor: redPalette().primaryMain,
             color: "#fff",
             borderRadius: "50%",
             padding: "10px",
             "&.MuiButtonBase-root:hover": {
-              backgroundColor: red.primary800,
+              backgroundColor: redPalette().primary800,
             },
           }}
           onClick={() => { themeContext.presetMode.togglePresetColor("red") }}
@@ -66,12 +65,12 @@ const PresetSelection = () => {
         </IconButton>
         <IconButton
           sx={{
-            backgroundColor: purple.primaryMain,
+            backgroundColor: purplePalette().primaryMain,
             color: "#fff",
             borderRadius: "50%",
             padding: "10px",
             "&.MuiButtonBase-root:hover": {
-              backgroundColor: purple.primary800,
+              backgroundColor: purplePalette().primary800,
             },
           }}
           onClick={() => { themeContext.presetMode.togglePresetColor("purple") }}
@@ -83,12 +82,12 @@ const PresetSelection = () => {
         </IconButton>
         <IconButton
           sx={{
-            backgroundColor: green.primaryMain,
+            backgroundColor: greenPalette().primaryMain,
             color: "#fff",
             borderRadius: "50%",
             padding: "10px",
             "&.MuiButtonBase-root:hover": {
-              backgroundColor: green.primary800,
+              backgroundColor: greenPalette().primary800,
             },
           }}
           onClick={() => { themeContext.presetMode.togglePresetColor("green") }}

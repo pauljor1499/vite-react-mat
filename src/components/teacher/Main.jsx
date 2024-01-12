@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import SideDrawer from "./pages/side_drawer/SideDrawer";
 import { useDispatch, useSelector } from "react-redux";
 import { _teacherGetData } from "../../store/slices/auth/UserAuth";
+import ToggleColorMode from "../commons/components/themecolor/ToggleColorMode";
 
 const Main = () => {
     const { isLoading } = useSelector((state) => state.UserAuth);
@@ -19,7 +20,9 @@ const Main = () => {
 
     return (
         <>
-            <React.Fragment>{isLoading ? <SimpleLoading showLoading={isLoading} /> : mainContent()}</React.Fragment>
+            <ToggleColorMode>
+                <React.Fragment>{isLoading ? <SimpleLoading showLoading={isLoading} /> : mainContent()}</React.Fragment>
+            </ToggleColorMode>
         </>
     );
 };

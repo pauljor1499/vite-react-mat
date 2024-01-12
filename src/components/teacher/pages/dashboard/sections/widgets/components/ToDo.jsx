@@ -77,7 +77,7 @@ const ToDo = () => {
                     ))
                 ) : (
                     <Typography color="text.secondary">
-                        <i>ToDo list is empty</i>
+                        <i>List is empty</i>
                     </Typography>
                 )}
             </List>

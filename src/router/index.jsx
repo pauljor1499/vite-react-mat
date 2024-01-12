@@ -18,8 +18,8 @@ import TeacherClassesMainPage from "../components/teacher/pages/classes/Main.jsx
 import TeacherClassesPage from "../components/teacher/pages/classes/class_list/ClassesPage.jsx";
 import TeacherViewClassMainPage from "../components/teacher/pages/classes/view_class/Main.jsx";
 //teacher assignments
-// import TeacherNewAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/new_assignment/NewAssignment.jsx";
-// import TeacherEditAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/edit_assignment/EditAssignment.jsx";
+import TeacherNewAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/new_assignment/NewAssignment.jsx";
+import TeacherEditAssignment from "../components/teacher/pages/classes/view_class/assignments/assignments/edit_assignment/EditAssignment.jsx";
 // teacher messages
 import TeacherMessages from "../components/teacher/pages/messages/Messages.jsx";
 import TeacherResourcesPage from "../components/teacher/pages/resources/Resources.jsx";
@@ -87,14 +87,14 @@ const routes = createBrowserRouter([
                         path: ":classTitle",
                         element: <TeacherViewClassMainPage />,
                     },
-                    // {
-                    //     path: ":classTitle/:newAssignmentName",
-                    //     element: <TeacherNewAssignment />,
-                    // },
-                    // {
-                    //     path: ":classTitle/edit-assignment",
-                    //     element: <TeacherEditAssignment />,
-                    // },
+                    {
+                        path: ":classTitle/:newAssignmentName",
+                        element: <TeacherNewAssignment />,
+                    },
+                    {
+                        path: ":classTitle/edit-assignment",
+                        element: <TeacherEditAssignment />,
+                    },
                 ],
             },
             {

@@ -160,8 +160,7 @@ const ClassesPage = () => {
     }
   }, [classData]);
 
-  // Context values for child components
-
+  // Schedule Item context values for child components
   const [schedState, setSchedState] = React.useState([]);
 
   const addSchedItem = (schedule) => {

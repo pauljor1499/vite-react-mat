@@ -225,7 +225,7 @@ const CreateNewClass = React.forwardRef((props, ref) => {
   });
 
   useEffect(() => {
-    addNewClassFormik.values.schedules = newClass.schedules;
+    addNewClassFormik.values.schedules = schedState;
   }, [newClass.schedules, addNewClassFormik.values]);
 
   return (
@@ -376,7 +376,7 @@ const CreateNewClass = React.forwardRef((props, ref) => {
               </Collapse>
               <List>
                 <TransitionGroup>
-                  {newClass.schedules.map((item, index) => (
+                  {schedState.map((item, index) => (
                     <Collapse key={index}>
                       <CreatedSchedItem
                         key={index}

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const ClassesPageContext = React.createContext({ 
-    schedState: Array,
+    schedState: [],
     addSchedItem: () => {}, 
     removeSchedItem: () => {}, 
     resetSchedItems: () => {}
